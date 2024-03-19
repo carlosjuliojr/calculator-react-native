@@ -18,7 +18,7 @@ function CalculatorScreen() {
     multiplyOperation,
     addOperation,
     calculateResult,
-} = useCalculator();
+  } = useCalculator();
 
   return (
     <View style={styles.calculatorContainer}>
@@ -26,7 +26,9 @@ function CalculatorScreen() {
         <Text adjustsFontSizeToFit numberOfLines={1} style={styles.mainResult}>
           {formula}
         </Text>
-        <Text adjustsFontSizeToFit numberOfLines={1} style={styles.subResult}>{numberSelected}</Text>
+        <Text adjustsFontSizeToFit numberOfLines={1} style={styles.subResult}>
+          {numberSelected}
+        </Text>
       </View>
 
       <View style={styles.row}>
